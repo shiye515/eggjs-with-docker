@@ -5,15 +5,11 @@ FROM node:8
 WORKDIR /app
 
 # Copy the scr directory contents into the container at /app
-# COPY ./ /
-COPY package.json /
-COPY yarn.lock /
-COPY app/ /app/
+COPY . /app/
 
 # 安装依赖
-RUN npm install -g yarn --registry=https://registry.npm.taobao.org
-RUN yarn config set registry https://registry.npm.taobao.org
-RUN yarn install --production
+RUN npm config set registry https://registry.npm.taobao.org
+RUN npm install --production
 
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
@@ -22,4 +18,4 @@ EXPOSE 8080
 ENV NODE_ENV production
 
 # start server
-CMD ["npm", "run start"]
+CMD ["npm", "run", "start"]

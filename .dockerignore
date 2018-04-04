@@ -1,0 +1,6 @@
+logs/
+node_modules/
+run/
+.*
+Dockerfile
+README.md
