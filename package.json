@@ -1,0 +1,21 @@
+{
+  "name": "docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "egg-bin dev",
+    "start": "node bootstrap.js",
+    "docker:build": "docker build -t nodejs .",
+    "docker:run": "docker run -d -p 8080:8080 nodejs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "egg": "^2.5.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.6.2"
+  }
+}
