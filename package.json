@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "egg-bin dev",
     "start": "node bootstrap.js",
-    "docker:build": "docker build -t nodejs .",
-    "docker:run": "docker run -d -p 8080:8080 nodejs"
+    "docker:build": "docker build -t nodeui:dev .",
+    "docker:run": "docker run -d -p 8080:8080 nodeui:dev"
   },
   "keywords": [],
   "author": "",

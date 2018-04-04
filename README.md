@@ -3,15 +3,13 @@
 ## usage
 
 ```bash
-yarn run docker:build
-yarn run docker:run
+npm run docker:build
+npm run docker:run
 ```
 
 ## develop
 
-> dependencies: nodejs yarn
-
 ```bash
-yarn install
-yarn run dev
+npm install --registry=https://registry.npm.taobao.org
+npm run dev
 ```
