@@ -1,4 +1,6 @@
-# nodeui docker image
+# nodeui docker image source
+
+> build on framework [eggjs](https://eggjs.org/zh-cn/intro/quickstart.html)
 
 ## usage
 
